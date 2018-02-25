@@ -20,7 +20,7 @@ Assuming you have the [CLI installed](https://docs.openshift.com/container-platf
 
 Build the container and deploy it in OpenShift:
 
-`$ oc new-app https://github.com/rht-labs/labs-ci-cd --name=tool-box --context-dir=docker/tool-box`
+`$ oc new-app https://github.com/dwaiba/labs-ci-cd --name=tool-box --context-dir=docker/tool-box`
 
 Wait for the build to finish and the container to deploy. You can now log into the terminal via the pod web console.
 
@@ -36,7 +36,7 @@ Copy the NAME of the `tool-box` pod and then remote shell into it:
 
 Clone this repo:
 
-`$ git clone https://github.com/rht-labs/labs-ci-cd`
+`$ git clone https://github.com/dwaiba/labs-ci-cd`
 
 Build the container:
 

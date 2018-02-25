@@ -249,7 +249,7 @@ objects:
     name: gogs-data
   spec:
     accessModes:
-      - ReadWriteOnce
+      - ReadWriteMany
     resources:
       requests:
         storage: ${GOGS_VOLUME_CAPACITY}
@@ -259,7 +259,7 @@ objects:
     name: gogs-postgres-data
   spec:
     accessModes:
-      - ReadWriteOnce
+      - ReadWriteMany
     resources:
       requests:
         storage: ${DB_VOLUME_CAPACITY}
