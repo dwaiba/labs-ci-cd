@@ -124,6 +124,7 @@
             "securityContext": {
               "capabilities": {}
             },
+    	    "serviceAccountName": "useroot", 
             "terminationGracePeriodSeconds": 30,
             "volumes": [
               {

@@ -315,6 +315,7 @@
                     "value": "${EXTRA_JVM_ARGS}"
                   }
                 ],
+		"serviceAccountName": "useroot",
                 "imagePullPolicy": "Always",
                 "livenessProbe": {
                   "failureThreshold": 3,
