@@ -65,9 +65,6 @@
       "kind": "DeploymentConfig",
       "metadata": {
         "name": "${NAME}",
-        "annotations": {
-          "openshift.io/scc": "privileged"
-        },
         "labels" : {
           "app" : "${NAME}"
         }
@@ -125,8 +122,7 @@
             "dnsPolicy": "ClusterFirst",
             "restartPolicy": "Always",
             "securityContext": {
-              "capabilities": {},
-              "privileged": true
+              "capabilities": {}
             },
             "terminationGracePeriodSeconds": 30,
             "volumes": [

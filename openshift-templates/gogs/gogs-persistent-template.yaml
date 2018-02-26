@@ -220,8 +220,6 @@ objects:
               failureThreshold: 3
         dnsPolicy: ClusterFirst
         restartPolicy: Always
-        securityContext: 
-        - privileged: true        
         terminationGracePeriodSeconds: 30
         volumes:
         - name: gogs-data

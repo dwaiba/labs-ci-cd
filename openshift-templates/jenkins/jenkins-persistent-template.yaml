@@ -49,8 +49,6 @@ objects:
   kind: DeploymentConfig
   metadata:
     name: ${JENKINS_SERVICE_NAME}
-    annotations:
-      openshift.io/scc: privileged
     labels:
       app: ${JENKINS_SERVICE_NAME}
   spec:
@@ -102,7 +100,6 @@ objects:
               memory: ${MEMORY_LIMIT}
           securityContext:
             capabilities: {}
-            privileged: true
           terminationMessagePath: /dev/termination-log
           volumeMounts:
           - mountPath: /var/lib/jenkins
