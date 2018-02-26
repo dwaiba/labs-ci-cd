@@ -145,8 +145,3 @@ openshift_cluster_content:
     namespace: labs-ci-cd
     tags:
     - ci
-- object: policy
-  content:
-  - name: scc-gitlab-policy
-    template: "{{ inventory_dir }}/../openshift-templates/scc/template-project-run-anyuid.json"
-    params: "{{ inventory_dir }}/../params/policy/scc_params"
