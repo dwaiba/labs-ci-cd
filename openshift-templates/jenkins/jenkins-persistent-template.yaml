@@ -49,6 +49,8 @@ objects:
   kind: DeploymentConfig
   metadata:
     name: ${JENKINS_SERVICE_NAME}
+    annotations:
+      openshift.io/scc: privileged
     labels:
       app: ${JENKINS_SERVICE_NAME}
   spec:
@@ -158,6 +160,7 @@ objects:
   kind: Service
   metadata:
     annotations:
+      openshift.io/scc: "privileged",
       service.alpha.openshift.io/dependencies: '[{"name": "${JNLP_SERVICE_NAME}",
         "namespace": "", "kind": "Service"}]'
       service.openshift.io/infrastructure: "true"

@@ -65,6 +65,9 @@
       "kind": "DeploymentConfig",
       "metadata": {
         "name": "${NAME}",
+        "annotations": {
+          "openshift.io/scc": "privileged"
+        },
         "labels" : {
           "app" : "${NAME}"
         }
